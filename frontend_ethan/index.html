@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Einkaufen in Berlin: Entdecke neue Geschäfte mit Locafox</title>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1" name="viewport">
+    <link href="./css/page.css" media="all" rel="stylesheet">
+    <link href="./css/menu.css" media="all" rel="stylesheet">
+    <link href="./css/map.css" media="all" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ <!--    <script src="https://fb.me/react-0.14.2.min.js"></script> -->
+  <!--   <script src="https://fb.me/react-dom-0.14.2.min.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=true&callback=initMap" async defer></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/map.js"></script>
+</head>
+<body class="HOME">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9 col-sm-4 col-md-3 logo">
+                    <a href="https://www.locafox.de/">
+                        <img alt="Locafox logo lg" class="img-responsive" src="./img/locafox_logo_lg-67efafda6be08925d561e8ff469ba2e7.png">
+                    </a>
+                </div>
+                <div class="col-xs-3 visible-xs-block">
+                    <div class="burger-container">
+                        <a class="js-show-nav" href="https://www.locafox.de/berlin/#">
+                            <img alt="Icon burger" src="./img/icon_burger-d7eb8598945bd5df1915976ef87017dd.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-sm-8 col-md-5">
+                    <form action="https://www.locafox.de/search/" class="header-search-form">
+                        <div class="row no-gutter">
+                            <div class="col-xs-9 input-cell">
+                                <input class="js-autocomplete-search" name="q" placeholder="Wonach suchst du?" required="" autocomplete="off">
+                            </div>
+                            <div class="col-xs-3">
+                                <button>
+                                    Finden
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories-subheader">
+        <div class="container">
+            <!--MENU START -->
+            <ul id="menuHOlder">
+                <li class="topMenu">
+                    <a href="#electronics">electronics</a>
+                    <div class="dropDown-Content">
+                        <a href="#">Top Categories</a>
+                    </div>
+                </li>
+                <li class="topMenu">
+                    <a href="#">Books</a>
+                    <div class="dropDown-Content">
+                        <a href="#">Top Categories</a>
+                        <div class="dropDown-Content2">
+                            <a href="#">Novels</a>
+                            <a href="#">Mystery</a>
+                        </div>
+                        <a href="#">All Products</a>
+                    </div>
+                </li>
+                <li class="topMenu">
+                    <a href="#">Conversation</a>
+                    <div class="dropDown-Content">
+                        <a href="#">Top Categories</a>
+                        <a href="#">All Products</a>
+                        <a href="#">More Categories</a>
+                    </div>
+                </li>
+                <li class="topMenu">
+                    <a href="#">More</a>
+                    <div class="dropDown-Content">
+                        <a href="#">Fashion</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Pets</a>
+                        <a href="#">Car</a>
+                    </div>
+                </li>
+                
+            </ul>
+            <!--MENU END -->
+        </div>
+    </div>
+    <div class="map-container">
+        <!--MAP START -->
+        <div class="btn" onclick="mapCordinates.getToken();">Click Me</div>
+        <div id="map">
+
+        </div>
+        <!--MAP END -->
+    </div>
+    
+</body>
+</html>
